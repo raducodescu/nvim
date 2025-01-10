@@ -74,7 +74,9 @@ local servers = {
       },
     },
   },
-  pyright = {},
+  pyright = {
+    enabled = false,
+  },
   terraformls = {},
   tinymist = {},
   yamlls = {
