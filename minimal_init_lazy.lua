@@ -31,5 +31,6 @@ require("lazy").setup(plugins, {
 })
 
 -- vim.cmd.colorscheme("tokyonight")
-vim.cmd.colorscheme("catppuccin")
 -- add anything else here
+
+vim.cmd.colorscheme("catppuccin")
