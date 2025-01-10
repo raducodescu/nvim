@@ -1,8 +1,23 @@
 {
   "Gmail": {
     "prefix": "gmail",
-    "body": "radu.codescu27@gmail.com",
+    "body": "michaeljohannpeter@gmail.com",
     "description": "Insert your Gmail address"
+  },
+  "Rootknecht": {
+    "prefix": "rootknecht",
+    "body": "allaman@rootknecht.net",
+    "description": "Insert the Rootknecht email address"
+  },
+  "MFG": {
+    "prefix": "mfg",
+    "body": ["Mit freundlichen Grüßen", "Michael Peter"],
+    "description": "Insert a friendly closing statement"
+  },
+  "Sehr Geehrte": {
+    "prefix": "sehrg",
+    "body": ["Sehr geehrte Damen und Herren,", "", ""],
+    "description": "Insert a formal greeting"
   },
   "Modeline": {
     "prefix": "modeline",
