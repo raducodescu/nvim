@@ -30,19 +30,11 @@ map("n", "<leader>wk", "<cmd>resize +5<cr>", { desc = "Up" })
 map("n", "<leader>wj", "<cmd>resize -5<cr>", { desc = "Down" })
 map("n", "<leader>wh", "<cmd>vertical resize +3<cr>", { desc = "Left" })
 map("n", "<leader>wl", "<cmd>vertical resize -3<cr>", { desc = "Right" })
-map("n", "\\q", "<cmd>tabclose<cr>", { desc = "Close Tab" })
 
 -- buffers
 map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
 map("n", "<leader>bD", "<cmd>%bd|e#|bd#<cr>", { desc = "Close all but the current buffer" })
-
--- tabs
-
--- Map \l to switch to the next tab
-map("n", "\\l", ":tabnext<CR>", { desc = "Next tab", noremap = true, silent = true })
--- Map \h to switch to the previous tab
-map("n", "\\h", ":tabprevious<CR>", { desc = "Previous tab", noremap = true, silent = true })
 
 -- new file
 map("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New file" })
