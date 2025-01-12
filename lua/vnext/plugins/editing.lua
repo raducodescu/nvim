@@ -100,16 +100,6 @@ return {
       -- Number of lines within which surrounding is searched
       n_lines = 50,
     },
-    config = function(_, opts)
-      vim.keymap.set(
-        "n",
-        "<leader><leader>s",
-        ":normal saiW`<Esc>",
-        { desc = "Surround inner word with backticks", noremap = true }
-      )
-      -- TODO: which-key integration
-      require("mini.surround").setup(opts)
-    end,
   },
 
   {
@@ -154,7 +144,6 @@ return {
   -- emoji blink.cmp integration
   {
     "saghen/blink.cmp",
-    optional = true,
     dependencies = { "allaman/emoji.nvim", "saghen/blink.compat" },
     opts = {
       sources = {
@@ -190,5 +179,14 @@ return {
       { "<leader>Rs", mode = "v", "<cmd>lua require('grug-far').with_visual_selection({ prefills = { paths = vim.fn.expand('%') } })<cr>", desc = "Search selection", },
       -- stylua: ignore end
     },
+  },
+
+  {
+    "echasnovski/mini.align",
+    keys = {
+      { "ga", mode = { "n", "v" } },
+      { "gA", mode = { "n", "v" } },
+    },
+    opts = {},
   },
 }

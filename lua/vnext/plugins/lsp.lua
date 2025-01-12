@@ -94,7 +94,7 @@ local servers = {
           url = "https://www.schemastore.org/api/json/catalog.json",
         },
         format = { enabled = false },
-        -- anabling this conflicts between Kubernetes resources, kustomization.yaml, and Helmreleases
+        -- enabling this conflicts between Kubernetes resources, kustomization.yaml, and Helmreleases
         validate = false,
         schemas = {
           kubernetes = "*.yaml",
@@ -149,8 +149,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" }, -- BUG: Prevents new tools from being installed!
-    -- dependencies = {
-    -- },
     config = function()
       -- function will be executed to configure the current buffer
       vim.api.nvim_create_autocmd("LspAttach", {
