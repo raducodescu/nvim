@@ -115,6 +115,7 @@ local servers = {
       },
     },
   },
+  rust_analyzer = {},
 }
 local tools = {
   "isort",
