@@ -23,6 +23,9 @@ return {
         end,
       },
     },
+    git = {
+      icons = false, -- Disable Git icons
+    },
     keys = {
       { "<leader>ss", "<cmd>FzfLua live_grep<cr>", desc = "Strings" },
       { "<leader>sh", "<cmd>FzfLua helptags<cr>", desc = "Help" },
