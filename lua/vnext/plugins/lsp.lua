@@ -116,6 +116,7 @@ local servers = {
       },
     },
   },
+  rust_analyzer = {},
 }
 local tools = {
   "debugpy",
