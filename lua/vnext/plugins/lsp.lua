@@ -143,6 +143,7 @@ local tools = {
   "yamllint",
 }
 
+-- TODO: Maybe replace Mason with "pure" nvim-lspconfig
 return {
 
   { "williamboman/mason.nvim", config = true, lazy = true }, -- NOTE: Must be loaded before dependants
