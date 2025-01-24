@@ -81,6 +81,7 @@ return {
         },
         marksman = {},
         pyright = {},
+        rust_analyzer = {},
         terraformls = {},
         tinymist = {},
         yamlls = {
