@@ -9,6 +9,8 @@ return {
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
+    explorer = {},
+
     dashboard = {
       enabled = true,
       preset = {
@@ -44,6 +46,12 @@ return {
       timeout = 2000,
     },
     picker = {
+      sources = {
+        explorer = {
+          auto_close = true,
+          jump = { close = true },
+        },
+      },
       win = {
         input = {
           keys = {
@@ -91,6 +99,7 @@ return {
     { "<leader>gl", function() Snacks.picker.git_log():set_layout("ivy") end, desc = "Git Log" },
     { "<leader>gf", function() Snacks.picker.git_log_file():set_layout("ivy") end, desc = "Git Log File" },
     { "<leader>gL", function() Snacks.picker.git_log_line():set_layout("ivy") end, desc = "Git Log Line" },
+    { "<leader>fp", function() Snacks.picker.explorer() end, desc = "Toggle Filetree" },
     { "<leader>sd", function() Snacks.picker.diagnostics():set_layout("ivy") end, desc = "Diagnostics" },
     { "<leader>sk", function() Snacks.picker.keymaps():set_layout("ivy") end, desc = "Keymaps" },
     { "<leader>ld", function() Snacks.picker.lsp_definitions():set_layout("ivy") end, desc = "Definition" },
